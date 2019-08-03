@@ -247,7 +247,7 @@ class ManifestAsset extends Asset {
 
     processDevtoolspage() {
         const devtoolsPage = this.ast.devtools_page
-        this.processSingleDependency(devtoolsPage)
+        this.ast.devtools_page = this.processSingleDependency(devtoolsPage)
     }
 
     collectDependenciesForWebExtension() {
